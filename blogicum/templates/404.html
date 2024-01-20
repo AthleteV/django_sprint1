@@ -1,0 +1,11 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block title %}Ошибка 404{% endblock %}
+{% block content %}
+  <div class="center-block text-center">
+    <h1>404</h1>
+    <h1>Такой страницы нет</h1>
+    <p>
+      Возврат на <a href="{% url 'blog:index' %}">главную страницу</a></p>
+  </div>
+{% endblock %}
